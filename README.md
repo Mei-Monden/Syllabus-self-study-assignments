@@ -1,44 +1,21 @@
-# Ruby on Rails チュートリアルのサンプルアプリケーション
+# ユーザーの検索機能の追加実装
+## 証跡
 
-これは、次の教材で作られたサンプルアプリケーションです。
-[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-（第7版）
-[Michael Hartl](https://www.michaelhartl.com/) 著
 
-## ライセンス
+https://github.com/Mei-Monden/Syllabus-self-study-assignments/assets/114786251/1d9c6cd3-064f-497a-89a7-5a76915f048b
 
-[Ruby on Rails チュートリアル](https://railstutorial.jp/)内にある
-ソースコードはMITライセンスとBeerwareライセンスのもとで公開されています。
-詳細は [LICENSE.md](LICENSE.md) をご覧ください。
 
-## 使い方
 
-このアプリケーションを動かす場合は、まずはリポジトリを手元にクローンしてください。
-その後、次のコマンドで必要になる RubyGems をインストールします。
+## 変更箇所
 
-```
-$ gem install bundler -v 2.3.14
-$ bundle _2.3.14_ config set --local without 'production'
-$ bundle _2.3.14_ install
-```
 
-その後、データベースへのマイグレーションを実行します。
+https://github.com/Mei-Monden/Syllabus-self-study-assignments/blob/8d83e050ee39d34d53831ca90fc9c84763778172/app/views/users/index.html.erb#L4-L9
 
-```
-$ rails db:migrate
-```
 
-最後に、テストを実行してうまく動いているかどうか確認してください。
+https://github.com/Mei-Monden/Syllabus-self-study-assignments/blob/8d83e050ee39d34d53831ca90fc9c84763778172/app/controllers/users_controller.rb#L63-L67
 
-```
-$ rails test
-```
 
-テストが無事にパスしたら、Railsサーバーを立ち上げる準備が整っているはずです。
+https://github.com/Mei-Monden/Syllabus-self-study-assignments/blob/8d83e050ee39d34d53831ca90fc9c84763778172/app/models/user.rb#L111-L114
 
-```
-$ rails server
-```
 
-詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-を参考にしてください。
+https://github.com/Mei-Monden/Syllabus-self-study-assignments/blob/8d83e050ee39d34d53831ca90fc9c84763778172/config/routes.rb#L22
