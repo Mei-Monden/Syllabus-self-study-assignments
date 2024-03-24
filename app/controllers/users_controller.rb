@@ -60,11 +60,6 @@ class UsersController < ApplicationController
     render 'show_follow'
   end
 
-  def search
-    @users = User.search(params[:keyword]).paginate(page: params[:page])
-    @keyword = params[:keyword]
-    render "index"
-  end
 
   private
 
