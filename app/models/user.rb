@@ -107,11 +107,6 @@ class User < ApplicationRecord
   def following?(other_user)
     following.include?(other_user)
   end
-
-   # 検索機能
-  def self.search(keyword)
-    where(["name like? OR email like?", "%#{keyword}%", "%#{keyword}%"])
-  end
   
 
   private
